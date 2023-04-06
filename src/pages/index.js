@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="mt-4 flex-col justify-center items-center flex bg-slate-300 w-[100%]">
+      <div className="flex-col justify-center items-center flex bg-slate-300 absolute h-[100%] w-[100%]">
         <div className="mt-4 flex items-center flex-col">
           <h1 className="lg:text-7xl sm:text-4xl md:text-5xl text-slate-700">
             FILE ENCODER
