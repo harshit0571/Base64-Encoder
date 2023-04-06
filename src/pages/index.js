@@ -17,12 +17,12 @@ export default function Home() {
 
   return (
     <>
-      <div className="absolute flex-col justify-center items-center flex bg-slate-300 w-[100%] h-[100%]">
-        <div className=" flex items-center flex-col">
-          <h1 className="lg:text-7xl sm:text-4xl md:text-5xl text-slate-700 gap-10">
+      <div className="mt-4 flex-col justify-center items-center flex bg-slate-300 w-[100%]">
+        <div className="mt-4 flex items-center flex-col">
+          <h1 className="lg:text-7xl sm:text-4xl md:text-5xl text-slate-700">
             FILE ENCODER
           </h1>
-          <h1 className="text-xl text-slate-500 font-semibold mt-10 mb-5">
+          <h1 className="text-xl text-slate-500 font-semibold mt-10 mb-5 sm:m-2">
             enter file
           </h1>
         </div>
@@ -30,7 +30,7 @@ export default function Home() {
         <div className=" flex items-center flex-col">
           <input type="file" onChange={(e) => setFile(e.target.files[0])} />
           <button
-            className="bg-red-600 rounded-lg shadow-md text-2xl sm:text-lg text-white p-2 mt-10"
+            className="bg-red-600 rounded-lg shadow-md text-2xl sm:text-lg text-white p-2 mt-10 sm:m-2"
             onClick={Base64}
           >
             ENCODE
