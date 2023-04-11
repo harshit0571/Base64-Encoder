@@ -11,7 +11,7 @@ function Encoder() {
     reader.onload = function () {
       setBase64File(reader.result);
       const y = reader.result;
-      console.log(y);
+
       setBase64File(y);
     };
   };

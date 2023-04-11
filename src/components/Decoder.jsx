@@ -7,10 +7,11 @@ function Decoder() {
   const [File, setFile] = useState(null);
   const [Base64, setBase64] = useState("");
 
-  const Decode = async () => {
-    const file = await decode(Base64);
+  const Decode_Base64 = () => {
+    console.log(Base64);
+    const file = decode(Base64);
+    console.log(file);
     setFile(file);
-    console.log(File);
   };
   return (
     <div className="flex-col justify-center items-center flex bg-slate-300 absolute h-[100%] w-[100%]">
@@ -35,7 +36,7 @@ function Decoder() {
         ></textarea>
         <button
           className="bg-white rounded-lg shadow-md text-2xl sm:text-lg text-red-500 p-2 mt-10"
-          onClick={Decode}
+          onClick={Decode_Base64}
         >
           DOWNLOAD
         </button>
